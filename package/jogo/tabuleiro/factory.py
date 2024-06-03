@@ -15,11 +15,9 @@ class PecaFactory:
         if(linha == 0):
             return self.criar_branca(coluna)
         if(linha == 1):
-            Piao(True)
-            return self.criar_branca(coluna)
+            return Piao(True)
         if(linha == 6):
-            Piao(True)
-            return self.criar_preta(coluna)
+            return Piao(True)
         elif linha == 7:
             return self.criar_preta(coluna)
         
