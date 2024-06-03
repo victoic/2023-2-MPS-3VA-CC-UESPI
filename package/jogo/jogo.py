@@ -1,7 +1,7 @@
 
 from random import random
 from tabuleiro.tabuleiro import Tabuleiro
-# from tabuleiro.casa import Casa
+from tabuleiro.pecas import Peca 
 from TimeoutInput import input_com_tempo
 
 class Jogo:
@@ -29,7 +29,21 @@ class Jogo:
 
   #TODO: implementar
   def mover(self, origem, destino) -> bool:
-    pass
+    peca:Peca = self._tabuleiro.get_xy(origem[0], origem[1])
+    proxima_casa:Peca | None =None
+
+    if peca == None:
+      return False
+    
+    movimentos = peca.movimento()
+    if (peca.is_valido(movimentos)):
+      
+      proxima_casa = self._tabuleiro.get_xy(destino[0], destino[1])
+      self._tabuleiro.set_xy(destino[0], destino[1], peca)
+      
+      return True
+    
+    return False
 
   #TODO: implementar
   def is_xeque(self) -> bool:
@@ -50,6 +64,8 @@ class Jogo:
       (origem, destino) = movimento
 
       self.mover(origem,destino)
+
+      self.atualizar_turno()
 
   def pegar_movimento(self):
     texto = f"turno do player {self._contador_turnos}."
@@ -79,14 +95,9 @@ class Jogo:
     y = int(posicao_origem[1]) 
     origem = (x,y)
     
-  
-    #TODO:implementar pegar a casa de origem
-
-
     x = int(posicao_destino[0])
     y = int(posicao_destino[1])
     destino = (x,y)
-    #TODO:implementar pegar a casa de destino
     
     return (origem, destino)
   
