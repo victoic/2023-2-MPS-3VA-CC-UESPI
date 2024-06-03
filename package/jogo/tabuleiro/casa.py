@@ -4,4 +4,4 @@ class Casa:
         self.y = y
 
     def get_peca(self, x, y):
-        return self.peca
+        pass
