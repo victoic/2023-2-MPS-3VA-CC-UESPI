@@ -1,8 +1,8 @@
-
+from casa import Casa
 from abc import ABC, abstractmethod
 
 class Peca:
-    def __init__(self) -> None:
+    def __init__(self):
         pass
 
     def is_branca(self):
