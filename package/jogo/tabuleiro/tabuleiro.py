@@ -1,3 +1,4 @@
+from casa import Casa
 class Tabuleiro:
     _instance = None #Variável que armazena a única instancia da classe tabuleiro
 
