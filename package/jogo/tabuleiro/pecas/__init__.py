@@ -5,8 +5,8 @@ class Peca:
     def __init__(self):
         pass
 
-    def is_branca(self):
-        if(self == "branca"):
+    def is_branca(self, peca):
+        if(peca == True):
             return True
         else:
             False
