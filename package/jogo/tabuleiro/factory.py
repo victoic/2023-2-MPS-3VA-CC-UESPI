@@ -1,6 +1,11 @@
 from abc import ABC, abstractmethod
 
-from pecas import piao, rainha, cavalo, torre, rei
+from pecas.piao import Piao
+from pecas.bispo import Bispo
+from pecas.cavalo import Cavalo
+from pecas.rainha import Rainha
+from pecas.torre import Torre
+from pecas.rei import Rei
 
 class PecaFactory:
     def __init__(self):
