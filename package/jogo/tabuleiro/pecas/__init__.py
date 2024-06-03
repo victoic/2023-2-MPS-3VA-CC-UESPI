@@ -1,7 +1,7 @@
 from casa import Casa
 from abc import ABC, abstractmethod
 
-class Peca:
+class Peca(ABC):
     def __init__(self, is_branca):
         self.is_branca = is_branca
         self.is_morta = False
