@@ -1,7 +1,7 @@
 
 from random import random
-from package.jogo.TimeoutInput import input_com_tempo
-from 
+from tabuleiro.tabuleiro import Tabuleiro
+from TimeoutInput import input_com_tempo
 class Jogo:
 
   TEMPO_JOGADA = 60*3
@@ -19,6 +19,7 @@ class Jogo:
     self._tempo_jogador2 = Jogo.TEMPO_JOGADA
     self._turno_atual = 1
     self._contador_turnos = 1
+    self._tabuleiro = Tabuleiro()
 
   # TODO: implementar
   def is_fim(self) -> bool:
