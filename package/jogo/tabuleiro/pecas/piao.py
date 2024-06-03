@@ -1,5 +1,9 @@
 from typing import List, Any
-class Piao():
+from transformavel import Transformavel
+from pecas_method_protocol import Pecas_protocol
+
+
+class Piao(Transformavel, Pecas_protocol):
     def __init__(self) -> None:
          pass
      
@@ -10,4 +14,7 @@ class Piao():
     
      #Any será substituido Casa
     def is_valido(list: Any) -> bool:
+        pass
+    
+    def transformar(self) -> Peca:
         pass
