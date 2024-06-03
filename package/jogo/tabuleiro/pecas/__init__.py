@@ -1,9 +1,10 @@
 from casa import Casa
 from abc import ABC, abstractmethod
 
-class Peca:
-    def __init__(self):
-        pass
+class Peca(ABC):
+    def __init__(self, is_branca):
+        self.is_branca = is_branca
+        self.is_morta = False
 
     def is_branca(self, peca):
         if(peca == True):
