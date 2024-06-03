@@ -6,7 +6,10 @@ class Peca:
         pass
 
     def is_branca(self):
-        pass
+        if(self == "branca"):
+            return True
+        else:
+            False
 
     def is_morta(self):
         pass
