@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from casa import Casa
 
 class Pecas_protocol(ABC):
     

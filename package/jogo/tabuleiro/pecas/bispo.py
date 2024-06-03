@@ -1,4 +1,5 @@
 from pecas_method_protocol import Pecas_protocol
+from casa import Casa
 
 class Bispo(Pecas_protocol):
     def movomento(self, pos_inicial: Casa) -> List[Casa]:
@@ -28,5 +29,4 @@ class Bispo(Pecas_protocol):
                 if abs(caminho[i].x - caminho[i-1].x) != 1 or abs(caminho[i].y - caminho[i-1].y) != 1:
                     return False
             return True
-        
         return False
