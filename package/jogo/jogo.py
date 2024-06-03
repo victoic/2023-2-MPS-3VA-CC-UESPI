@@ -1,7 +1,9 @@
 
 from random import random
 from tabuleiro.tabuleiro import Tabuleiro
+# from tabuleiro.casa import Casa
 from TimeoutInput import input_com_tempo
+
 class Jogo:
 
   TEMPO_JOGADA = 60*3
@@ -75,14 +77,15 @@ class Jogo:
 
     x = int(posicao_origem[0])
     y = int(posicao_origem[1]) 
-    origem = Casa(x,y)
+    origem = (x,y)
     
+  
     #TODO:implementar pegar a casa de origem
 
 
     x = int(posicao_destino[0])
     y = int(posicao_destino[1])
-    destino = Casa(x,y)
+    destino = (x,y)
     #TODO:implementar pegar a casa de destino
     
     return (origem, destino)
