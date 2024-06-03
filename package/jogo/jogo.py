@@ -1,6 +1,7 @@
 
 from random import random
-from TimeoutInput import input_com_tempo
+from package.jogo.TimeoutInput import input_com_tempo
+from 
 class Jogo:
 
   TEMPO_JOGADA = 60*3

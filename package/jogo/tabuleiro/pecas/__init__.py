@@ -11,8 +11,11 @@ class Peca:
         else:
             False
 
-    def is_morta(self):
-        pass
+    def is_morta(self, peca):
+        if(peca == True):
+            return True
+        else:
+            return False
 
     @abstractmethod
     def movimento():
