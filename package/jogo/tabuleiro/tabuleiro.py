@@ -20,11 +20,14 @@ class Tabuleiro:
                     if casa.get_peca:
                          pecas.append(casa.get_peca())
         return pecas  #retornar a lista de peças encontradas no tabuleiro
-    def get_xy(self, x, y, peca):
-         #acessa a casa na posição x e y na matriz
+    def get_xy(self, x, y):
+         #retorna  a peca do tabuleiro
+         self.casas[x][y].get_peca()
+
+    def set_xy(self, x, y ,peca):
+         #define uma peca na posição (x,Y)
          self.casas[x][y].set_peca(peca)
 
-
-     #Visualização do tabuleiro em string    
+        #Visualização do tabuleiro em string    
     def __reprCasas__(self):
          return f"Tabuleiro({self.casas})"
