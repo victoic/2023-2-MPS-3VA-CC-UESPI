@@ -1,4 +1,5 @@
 from typing import List
+from casa import Casa
 
 
 class Rei():
