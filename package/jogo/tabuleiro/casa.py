@@ -5,8 +5,8 @@ class Casa:
         self.x = x
         self.y = y
 
-    def get_peca(self):
-        if(self != None):
+    def get_peca(self, peca):
+        if(peca != None):
             return self
         else:
             return None
