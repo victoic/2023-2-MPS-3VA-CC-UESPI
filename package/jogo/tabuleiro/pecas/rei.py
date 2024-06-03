@@ -1,6 +1,6 @@
 from typing import List
 from pecas_method_protocol import Pecas_protocol
-from casa import Casa
+
 
 class Rei(Pecas_protocol):
 
