@@ -19,7 +19,11 @@ class Piao(Transformavel, Pecas_protocol):
     
      #Any será substituido Casa
     def is_valido(list: Any) -> bool:
-        pass
+        for i in range(len(casas)):
+            for verifica in cassa[i]:
+                if not verifica.get_pecas() is None:
+                    return false
+        return true
     
     def transformar(self) -> Peca:
         
