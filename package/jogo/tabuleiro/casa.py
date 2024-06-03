@@ -8,9 +8,12 @@ class Casa:
 
     def get_peca(self, peca):
         if(peca != None):
-            return self
+            return peca
         else:
             return None
+        
+    def get_xy(self):
+        return self.x, self.y
         
     def set_peca(self):
         pass
