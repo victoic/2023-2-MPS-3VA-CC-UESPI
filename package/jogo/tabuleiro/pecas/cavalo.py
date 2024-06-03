@@ -45,7 +45,9 @@ class Cavalo(Pecas_protocol):
         return super().movimento()
     
     def is_valido(list: Casa) -> bool:
-        return super().is_valido()
-        
->>>>>>> pecas
+        for i in range(len(casas)):
+            for verifica in cassa[i]:
+                if not verifica.get_pecas() is None:
+                    return false
+        return true
     
