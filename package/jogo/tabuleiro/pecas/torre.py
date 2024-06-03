@@ -6,6 +6,7 @@ class Torre(Pecas_protocol):
     
     def __init__(self) -> None:
         self._first_play_torre = True
+        self._first_play_torre = True
     
     def movimento(pos_inicial:Casa) -> List:
         

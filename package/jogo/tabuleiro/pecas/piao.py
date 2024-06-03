@@ -3,10 +3,9 @@ from transformavel import Transformavel
 from pecas_method_protocol import Pecas_protocol
 import sys
 import os
-
+sys.path.append(os.path.abspath( '../casa'))
 from casa import Casa
 
-sys.path.append(os.path.abspath( '../casa'))
 
 
 class Piao(Transformavel, Pecas_protocol):

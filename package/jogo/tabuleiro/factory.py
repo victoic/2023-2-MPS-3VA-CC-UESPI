@@ -1,6 +1,11 @@
 from abc import ABC, abstractmethod
 
-from pecas import piao, rainha, cavalo, torre, rei
+from pecas.piao import Piao
+from pecas.bispo import Bispo
+from pecas.cavalo import Cavalo
+from pecas.rainha import Rainha
+from pecas.torre import Torre
+from pecas.rei import Rei
 
 class PecaFactory:
     def __init__(self):
@@ -10,9 +15,9 @@ class PecaFactory:
         if(linha == 0):
             return self.criar_branca(coluna)
         if(linha == 1):
-            return self.criar_branca(coluna)
+            return Piao(True)
         if(linha == 6):
-            return self.criar_preta(coluna)
+            return Piao(True)
         elif linha == 7:
             return self.criar_preta(coluna)
         
